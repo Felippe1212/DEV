@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cidade de Bauru</title>
+
+        <style>
+            body {
+                background-image: linear-gradient(to right, #4921d8c2, #2fca96);
+                margin: 40px;
+                margin-bottom: -100px;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                font-family: Helvetica;
+               
+                
+            }
+
+            h2 {
+                font-size: 30px;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+
+            .borda {
+                border-top: 3px solid black;
+            }
+            
+            p {
+                text-align: center;
+                margin-top: 15px;
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+
+            .e { 
+                text-align: center;
+                
+            }
+
+            .borda1 {
+                border-top: 3px solid black;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Bauru cidade sem limites</h1>
+<br><div class="borda1">
+        <h2>Bauru é uma cidade localizada no interio do estado de São Paulo, Brasil.É conhecido por sua 
+            rica cultura, eduacação e econimia diversificada.</h2>
+
+        <h2>A cidade também é famosa por seus ponto turísticos, como o Parque Vitória Régia e o Zoológico Municipal.</h2>
+<br><br><div class="borda">
+       <br> <h2>Venha visitar Bauru e descobrir tudo o que essa cidade incrível tem a oferecer!</h2>
+<div class="e"> 
+        <img src="https://mediaim.expedia.com/destination/1/4d876f260d82bd9315e8c9fe0d746827.jpg" width="850" height="400">
+</div>
+        <p id="dados">Dados da cidade de Bauru: </p>
+
+        <script type="text/javascript">
+        var cidade = new Object();
+        cidade.pais = 'Pais: Brasil';
+        cidade.estado = 'Estado: Sao Paulo';
+        cidade.federacao = 'Federacao: Brazilia';
+        cidade.idade = 'Idade: 127';
+        document.getElementById('dados').innerHTML += cidade.pais +
+        ' - ' + cidade.estado + ' - ' + cidade.federacao + ' - ' +
+        cidade.idade;
+        
+        </script>
+
+    </div>
+    </body>
+</html>
