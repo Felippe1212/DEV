@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manipulação data e hora</title>
+    <style>
+        body {
+            background-color: #c0c0c042;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+
+        img {
+            width: 400px;
+            height: 300px;
+            padding: none;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Felippe Gabriel</h2>
+
+
+    <div id="data-hora"></div>
+    <script>
+        function atualizarDataHora() {
+            const agora = new Date();
+            const dataHoraElement = document.getElementById('data-hora');
+            dataHoraElement.textContent = `Data e hora atual:
+${agora.toLocaleString()}`;
+        }
+        atualizarDataHora();
+        setInterval(atualizarDataHora, 1000);
+        </script>
+
+        <script type="text/javascript">
+        function mudare(objeto, imagem) {
+            lua2.src = imagem;
+        }
+
+</script>
+
+        <script type="text/javascript">
+        function mudar(objeto, imagem) {
+            sol.src = imagem;
+        }
+
+    </script>
+
+<br><a onmouseover="mudare('lua2', 'nuvem1.png')" onmouseout="mudare('lua2', 'nuvem.png')">
+    <img src="nuvem.png" border="0" id="lua2">
+</a><br>
+
+
+
+<br><a onmouseover="mudar('sol', 'lua1.png')" onmouseout="mudar('sol', 'lua.png')">
+    <img src="lua.png" border="0" id="sol">
+</a><br>
+
+    <h1>Bauru 1000 graus</h1>
+
+
+</body>
+
+</html>
