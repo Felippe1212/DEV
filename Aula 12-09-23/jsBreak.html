@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Controle de fluxo</title>
+    </head>
+    <body>
+        <h1>Controle de fluxo - break</h1>
+        <p id="resposta"></p>
+        <script type="text/javascript">
+
+            var resposta = '';
+            var cont = 0;
+
+            for(cont = 0; cont <= 10; cont++){
+                if(cont === 8){
+                    break;
+                }
+                resposta += 'Valor da variavel e: ' + cont + '<br />';
+            }
+            document.getElementById('resposta').innerHTML = resposta;
+        </script>
+        <p>Teste feito por INSIRA SEU NOME</p>
+    </body>
+</html>
