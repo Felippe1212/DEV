@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Exemplo de DOM</title>
+    </head>
+    <body>
+        <h1></h1>
+        <p id="meuParagrafo">Este é um parágrafo.</p>
+        <button id="meuBotao">Clique em mim</button>
+        <button id="resetBotao">Resetar</button>
+
+        <script>
+ 
+            var titulo = document.querySelector("h1");
+            var paragrafo = document.getElementById("meuParagrafo");
+            var botao = document.getElementById("meuBotao");
+            var resetBotao = document.getElementById("resetBotao");
+
+            var textoOriginal = paragrafo.innerHTML;
+
+            titulo.innerHTML = "Novotec - Senac";
+            paragrafo.style.color = "green";
+
+            
+            botao.addEventListener("click", function() {
+                paragrafo.innerHTML = "Este é um exemplo simples de DOM";
+            });
+
+            resetBotao.addEventListener("click", function() {
+                paragrafo.innerHTML = textoOriginal;
+            })
+
+        </script>
+    </body>
+</html>
